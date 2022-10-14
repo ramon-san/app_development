@@ -1,0 +1,31 @@
+CREATE TABLE Cards(
+    number INT,
+    cvv INT,
+    exp_date DATE,
+    account_id INT,
+    PRIMARY KEY(card_number),
+    FOREIGN KEY(account_id) REFERENCES Accounts(id)
+);
+
+CREATE TABLE Accounts(
+    id INT,
+    client_id INT,
+    PRIMARY KEY(id),
+    FOREIGN KEY(client_id) REFERENCES Clients(id)
+);
+
+CREATE TABLE Clients(
+    id INT,
+    name VARCHAR(25),
+    father_lastname VARCHAR(25),
+    mother_lastname VARCHAR(25),
+    PRIMARY KEY(id)
+);
+
+CREATE TABLE Transactions(
+    id INT,
+    card_id INT,
+    amount INT,
+    PRIMARY KEY(id),
+    FOREIGN KEY(card_id) REFERENCES Cards(id)
+);

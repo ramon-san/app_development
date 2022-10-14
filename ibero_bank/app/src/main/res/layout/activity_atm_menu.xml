@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/welcome_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome {name}"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/balance_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Balance: {client_balance}"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/transactions_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Transactions" />
+
+    <Button
+        android:id="@+id/change_nip_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Change NIP" />
+
+    <Button
+        android:id="@+id/check_transactions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Check transactions" />
+</LinearLayout>

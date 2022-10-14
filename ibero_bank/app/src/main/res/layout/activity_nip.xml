@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/nip_main_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SECURITY"
+        android:textAlignment="center"
+        android:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/nip_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter NIP" />
+
+    <EditText
+        android:id="@+id/nip_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/validate_nip_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Validate NIP" />
+
+</LinearLayout>
